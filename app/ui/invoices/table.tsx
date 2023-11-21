@@ -27,10 +27,11 @@ export default async function InvoicesTable({
                   <div>
                     <div className="mb-2 flex items-center">
                       <Image
-                        src={invoice.image_url}
+                        src={invoice?.image_url}
                         className="mr-2 rounded-full"
                         width={28}
                         height={28}
+                        alt="Invoice image"
                       />
                       <p>{invoice.name}</p>
                     </div>
@@ -89,6 +90,7 @@ export default async function InvoicesTable({
                         className="rounded-full"
                         width={28}
                         height={28}
+                        alt="image invoice"
                       />
                       <p>{invoice.name}</p>
                     </div>
